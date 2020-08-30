@@ -17,6 +17,10 @@ body{
 	background: gray;
 }
 
+.button-more:hover{
+	background: white;
+}
+
 #sidebar h4{
 	background: url("../img/ok.jpg");
 }
