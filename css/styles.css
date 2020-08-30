@@ -106,6 +106,10 @@ h2{
   margin-bottom: 30px;
 }
 
+.button-more:hover{
+    color: black;
+}
+
 #sidebar{
   font-family: Helvetica, Arial;
   font-size: 15px;
