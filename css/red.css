@@ -20,6 +20,10 @@ body{
 	background: #b51c1c;
 }
 
+.button-more:hover{
+	background: white;
+}
+
 #sidebar h4{
 	background-color: #b51c1c;
 
