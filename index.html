@@ -1,375 +1,489 @@
 <!DOCTYPE HTML>
-
-<html>
+<html lang="es">
 	<head>
-		<title>Personal CV Of Thomas Hoffmann</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+		<meta name="viewport" content="width=device-width" />
+		<meta name="google-site-verification" content="uXm6DIp8dFpJ4_VM5uy88VuH_cDswUOX9qnWTwjVYhk" />
+		<title>Thomas Hoffmann | Software Engineer</title>
+
+		<!--CSS Section-->
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+		<link id="theme" rel="stylesheet" type="text/css" href="css/green.css" />
+		
+
+		<!--jQuery-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+		<!--Slider-->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  		<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+  		<!--MomentJS-->
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/locale/es.js"></script>
+
+  		<!--Scripts-->
+  		<script type="text/javascript" src="js/main.js"></script>
+  	    
+  		
+    	<!-- Load Facebook SDK for JavaScript -->
+		<div id="fb-root"></div>
+		<script>
+		  window.fbAsyncInit = function() {
+		    FB.init({
+		      xfbml            : true,
+		      version          : 'v3.3'
+		    });
+		  };
+
+		  (function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+
+		<!-- Your customer chat code -->
+		<div class="fb-customerchat"
+		  attribution=setup_tool
+		  page_id="340566880027002"
+		  logged_in_greeting="Hello! Please feel free to send me a message"
+		  logged_out_greeting="Hello! Please feel free to send me a message">
+		</div>
+		  		<script>
+		/*function check(e)
+		{
+		alert(e.keyCode);
+		}*/
+		 document.onkeydown = function(e) {
+		    if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 ||     e.keyCode === 117 || e.keycode === 17 || e.keycode === 85)) {//ctrl+u Alt+c, Alt+v will also be disabled sadly.
+		        alert('not allowed');
+		    }
+		    return false;
+		};
+		</script>
+  		
 	</head>
-	<body class="is-preload">
-
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Header -->
-					<header id="header">
-						<div class="logo">
-							<span class="icon fa-gem"></span>
-						</div>
-						<div class="content">
-							<div class="inner">
-								<h1>Welcome</h1>
-
-								<img class= "img-me" src="images/Thomas.jpg" alt="Me" /><br><br>
+	<body>
 
 
-								<p>I AM A FULL STACK DEVELOPER, FEEL FREE TO VIEW MORE ABOUT ME</p>
-							</div>
-						</div>
-						<nav>
-							<ul>
-								<li><a href="#intro">Intro</a></li>
-								<li><a href="#work">Work</a></li>
-								<li><a href="#about">About</a></li>
-								<li><a href="#technical">Technical</a></li>
-								<li><a href="#project-1">Project 1</a></li>
-								<li><a href="#project-2">Project 2</a></li>
-								<li><a href="#project-3">Project 3</a></li>
-								<li><a href="#project-4">Project 4</a></li>
-								<li><a href="#contact">Contact</a></li>
-								<li><a href="#policy">Policy</a></li>
-								<li><a href="#elements">Elements</a></li>-->
-							</ul>
-						</nav>
-					</header>
+		<div id="selector-theme">
+			<div id="to-green"></div>
+			<div id="to-red"></div>
+			<div id="to-blue"></div>
+		</div>
 
-				<!-- Main -->
-					<div id="main">
+		<section id="global">
 
-						<!-- Intro -->
-							<article id="intro">
-								<h2 class="major">Hi There!</h2>
-								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-								<p> 
-									<br>I am a responsible and organized developer.<br>
-									<br>I enjoy creating blogs, web apps, websites and learn new frameworks.<br>
-									<br>I mainly use JavaScript, HTML5 with CSS, PHP and WordPress.<br>
-									<br>The frameworks that I have used so far are React, Vue, Angular 9, Laravel and jQuery.<br>
-									<br>My goal is to find a job where I can build 3D web sites and web apps that provide pixel-perfect, performant experiences and create dynamic blogs at low cost.<br> 
-									<br>As well as being able to create and manage databases with impenetrable security.<br>
-									<br>I enjoy creating unique projects and I am looking forward to improving the technology I am using to program 3D web sites.
+			<!--Webpage Header-->
+			<header>
+				<div id="logo">
+					<h1>Software Developer | Designer</h1>
+				</div>
+
+				<div class="clearfix"></div>
+
+
+				<!--<nav id="menu">
+					<ul>
+						<li><a href="index.html">Home</a></li> 
+						<li><a href="about.html">Resume</a></li> 	  	
+					</ul>
+				</nav>-->
+			</header>
+			<!--
+			<--Picture Slider-->
+			<!--<div id="slider">
+				<div class="bxSlider">
+			<div><img src="img/tech motion.gif" title=""></div>
+			<div><img src="img/sphere.gif" title=""></div>		
+			<div><img src="img/tech2.gif" title="Squared Chips"></div>
+			<div><img src="img/tech3.gif" title=""></div>
+			<div><img src="img/tech6.gif" title=""></div>
+			<div><img src="img/Id.gif" title="ID"></div>
+			
+			</div>
+			</div>-->
+
+			<!--Page content-->
+					<br><br><br><br><br>	
+			<section id="content">
+				<div id="posts">
+					<article class trim="post">
+						<h3><b>Hi, My name is Thomas Hoffmann</b></h3>
+						<br><br><br>	
+						<span class="date"></span>
+						<!--1st Paragraph.-->
 						
-								</p>
-							</article>
 
-						<!-- Work -->
-							<article id="work">
-								<h2 class="major">Work Experience</h2>
-								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-									<p>
-					 
-			                    <h3>Hotel Victoria Inn</h3><br>Operations Manager | Developing a family project hotel business under managing and supervising labors.<br><br>
+						<p> 
+							<b>I am a responsible and organized developer.
+							<br>I enjoy creating blogs, web apps, websites and learn new frameworks.
+							<br>I mainly use JavaScript, HTML5 with CSS, PHP and WordPress.
+							<br>The frameworks that I have used so far are React, Vue, Angular 9, Laravel and jQuery.
+							<br>My goal is to find a job where I can build 3D web sites and web apps that provide pixel-perfect, performant experiences and create dynamic blogs at low cost.
+							<br>As well as being able to create and manage databases with impenetrable security.
+							</b>
+						</p><br>
+						<h3><b>Currently seeking full-time opportunities!</b></h3>
+						<br>
 
-			                    Administration | Organizing inventories, exceptional time management, self motivated, in charge of computer system, webpage, blog and social media management, supervision of all the hotel repairs as well as customer service.<br><br>
+						<div id ="facebook">
+				<a href="https://github.com/Thomas-Hoffmann-V" class="button-more"><b>GitHub</b></a>
+						</div>
 
-			                    Handled database and Web site programming tasks (Primarily using JavaScript, HTML 5, Node.JS and Angular 9), Implemented UI design using HTML and CSS working an average of 15 hours per week.<br><br>
+							<div id ="resume">
+				<a href="img/Resume.pdf" class="button-more"><b>Resume</b></a>
+						</div>
 
-			                    <br><br>
-			                    
 
-			                    <h3>Manager Of Family Project</h3><br>5 years managing a family business renting houses and apartments, supervising material handling costs and property repairs. From January 2013- August 2018.<br><br>
-
-			                    Administration | Computer system, webpage, blog and social media management.<br><br>
-
-			                    Supervision of web site and mailbox of complaints.<br><br>
-
-			                    Review of Investment Analysis.<br><br>
-
-			                    Financial Accounting Input and Output.
-
-								</p>
-							</article>
-
-						<!-- About -->
-							<article id="about">
-								<h2 class="major">About</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								• I have several certificates :<br><br>
-								- Web Application Developer<br>
-								- Master in Javascript, Jquery, JqueryUI, Angular, Node.JS<br>
-								- University Certificate | Creation And Development Of Companies<br>
-								- Advanced English. <br><br>
-
-				    			 
-                    			• I am a hard working person, with positive attitude that does not like to leave work done for another day. I enjoy learning new information technology and I am planning to learn new server side frameworks, Python programming language and artificial intelligence<br><br>
-
-			                    • I have worked with framework Angular 9 platform to add libraries using Node.JS and MongoDB to configure a VPS server and to add typescript libraries.<br><br>
-
-							    • I´ve also worked with JQuery-Interface-UI (Fun Stuff)...
-								Selectors, how to select labels, select classes, practice making events, mouse, hover, click, and move. <br><br>
-
-						        • Made requests with AJAX,  AJAX load method, get requests with AJAX in JQuery.<br><br>
-
-						        • Used Typescript, Tensorflow and worked with object-oriented programming.<br><br>
-
-                   			    • I like to use Symfony 3 to upload and publish web projects using hostinger and filezilla.<br><br>
-
-                   			    • Built Web responsive Websites and Blogs and connected them to MySQL database. (Haven´t had time to store all my work on Github, but am planning to manage that soon.<br>  
-							</article>
-
-							<!-- About -->
-							<article id="policy">
-								<h2 class="major">Policy</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<!DOCTYPE html>
-    <html>
-    <head>
-      <meta charset='utf-8'>
-      <meta name='viewport' content='width=device-width'>
-      <title>Privacy Policy</title>
-      <style> body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; padding:1em; } </style>
-    </head>
-    <body>
-    <strong>Privacy Policy</strong> <p>
-                  Thomas Hoffmann built the [ (NFF) – (Niños Felices Con Futuro)] app as
-                  a Free app. This SERVICE is provided by
-                  Thomas Hoffmann at no cost and is intended for use as
-                  is.
-                </p> <p>
-                  This page is used to inform visitors regarding my
-                  policies with the collection, use, and disclosure of Personal
-                  Information if anyone decided to use my Service.
-                </p> <p>
-                  If you choose to use my Service, then you agree to
-                  the collection and use of information in relation to this
-                  policy. The Personal Information that I collect is
-                  used for providing and improving the Service. I will not use or share your information with
-                  anyone except as described in this Privacy Policy.
-                </p> <p>
-                  The terms used in this Privacy Policy have the same meanings
-                  as in our Terms and Conditions, which is accessible at
-                  [Emergency Contacts] unless otherwise defined in this Privacy Policy.
-                </p> <p><strong>Information Collection and Use</strong></p> <p>
-                  For a better experience, while using our Service, I
-                  may require you to provide us with certain personally
-                  identifiable information, including but not limited to Emergency, contacts. The information that
-                  I request will be retained on your device and is not collected by me in any way.
-                </p> <div><p>
-                    The app does use third party services that may collect
-                    information used to identify you.
-                  </p> <p>
-                    Link to privacy policy of third party service providers used
-                    by the app
-                  </p> <ul><li><a href="https://www.google.com/policies/privacy/" target="_blank" rel="noopener noreferrer">Google Play Services</a></li><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----></ul></div> <p><strong>Log Data</strong></p> <p>
-                  I want to inform you that whenever you
-                  use my Service, in a case of an error in the app
-                  I collect data and information (through third party
-                  products) on your phone called Log Data. This Log Data may
-                  include information such as your device Internet Protocol
-                  (“IP”) address, device name, operating system version, the
-                  configuration of the app when utilizing my Service,
-                  the time and date of your use of the Service, and other
-                  statistics.
-                </p> <p><strong>Cookies</strong></p> <p>
-                  Cookies are files with a small amount of data that are
-                  commonly used as anonymous unique identifiers. These are sent
-                  to your browser from the websites that you visit and are
-                  stored on your device's internal memory.
-                </p> <p>
-                  This Service does not use these “cookies” explicitly. However,
-                  the app may use third party code and libraries that use
-                  “cookies” to collect information and improve their services.
-                  You have the option to either accept or refuse these cookies
-                  and know when a cookie is being sent to your device. If you
-                  choose to refuse our cookies, you may not be able to use some
-                  portions of this Service.
-                </p> <p><strong>Service Providers</strong></p> <p>
-                  I may employ third-party companies and
-                  individuals due to the following reasons:
-                </p> <ul><li>To facilitate our Service;</li> <li>To provide the Service on our behalf;</li> <li>To perform Service-related services; or</li> <li>To assist us in analyzing how our Service is used.</li></ul> <p>
-                  I want to inform users of this Service
-                  that these third parties have access to your Personal
-                  Information. The reason is to perform the tasks assigned to
-                  them on our behalf. However, they are obligated not to
-                  disclose or use the information for any other purpose.
-                </p> <p><strong>Security</strong></p> <p>
-                  I value your trust in providing us your
-                  Personal Information, thus we are striving to use commercially
-                  acceptable means of protecting it. But remember that no method
-                  of transmission over the internet, or method of electronic
-                  storage is 100% secure and reliable, and I cannot
-                  guarantee its absolute security.
-                </p> <p><strong>Links to Other Sites</strong></p> <p>
-                  This Service may contain links to other sites. If you click on
-                  a third-party link, you will be directed to that site. Note
-                  that these external sites are not operated by me.
-                  Therefore, I strongly advise you to review the
-                  Privacy Policy of these websites. I have
-                  no control over and assume no responsibility for the content,
-                  privacy policies, or practices of any third-party sites or
-                  services.
-                </p> <p><strong>Children’s Privacy</strong></p> <p>
-                  These Services do not address anyone under the age of 13.
-                  I do not knowingly collect personally
-                  identifiable information from children under 13. In the case
-                  I discover that a child under 13 has provided
-                  me with personal information, I immediately
-                  delete this from our servers. If you are a parent or guardian
-                  and you are aware that your child has provided us with
-                  personal information, please contact me so that
-                  I will be able to do necessary actions.
-                </p> <p><strong>Changes to This Privacy Policy</strong></p> <p>
-                  I may update our Privacy Policy from
-                  time to time. Thus, you are advised to review this page
-                  periodically for any changes. I will
-                  notify you of any changes by posting the new Privacy Policy on
-                  this page.
-                </p> <p>This policy is effective as of 2020-08-26</p> <p><strong>Contact Us</strong></p> <p>
-                  If you have any questions or suggestions about my
-                  Privacy Policy, do not hesitate to contact me at [This is a personal app for my family].
-                </p> <p>
-                  This privacy policy page was created at
-                  <a href="https://privacypolicytemplate.net" target="_blank" rel="noopener noreferrer">privacypolicytemplate.net</a>
-                  and modified/generated by
-                  <a href="https://app-privacy-policy-generator.firebaseapp.com/" target="_blank" rel="noopener noreferrer">App Privacy Policy Generator</a></p>
-   
-      
-							</article>
-
-						<!--Seccion de Articulo-->
-							<article id="technical">
-								<h2 class="major">Technical</h2>
-								<span class="image main"><img src="images/pic04.jpg" alt="" /></span>
-								Microsoft Office | Excel | Word | Power Point<br><br>
-								PHP – Created a transportation company blog.<br><br>
-								JavaScript | Created various personal web sites including a Doctor’s web site<br><br>
-								MySQL – Created various databases connecting blogs and websites.<br><br>
-								HTML 5 | Designed various web sites and styled them with CSS<br><br>
-								Google Sheets | Docs<br><br>
-								Google Developer Console | Double Account for storing Android Apps<br><br>
-								OBS | Live Streaming Studio | Aired a couple of music shows live on YouTube<br><br>
-								Angular 9 | Created a transportation web app and connected it to Mongo | Robo 3T Database<br><br>
-								Wordpress | Created blogs and a telephone company web site<br><br>
-
-							</article>
-
-						<!-- Contact -->
-							<article id="contact">
-								<h2 class="major">Contact</h2>
-				
-								<ul class="icons">
-									<li><a href="https://twitter.com/tommyhoffmannv" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							
-									<li><a href="https://www.linkedin.com/in/thomas-hoffmann-v-/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									<li><a href="https://github.com/thomas-hoffmann-v" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-									<br><br>
-										<h3 class="intro__contact">
+						<object data="resume.pdf" type="application/pdf" width="100%" height="800px"> 
+					  <b><p>Or you can <a href="img/Resume.pdf">click here to
+					  download the PDF file.</a></p> </b> 
+						</object>
+						<br><br>
+						<h3 class="intro__contact">
 						    <span>Get in touch </span>
 						    <span class="emoji pointer"></span>
 						    <span>
 						      <a href="mailto:tommyhv82@hotmail.com" target="_blank" class="highlight-link">Outlook | tommyhv82@hotmail.com</a>
 						    </span>
-					  	</h3><br><br>
+					  	</h3>
 
 
-						<object data="resume.pdf" type="application/pdf" width="100%" height="800px"> 
-						  <b><p>Or you can <a href="images/Resume.pdf">click here to
-						  download the PDF file.</a></p> </b> 
-						</object>
-						<br><br>
-					  	<h3><b>Currently seeking full-time opportunities!</b></h3>
-								</ul>
-							</article>
+					</article>
 
-						<!--Project 1 -->
+				<div class="clearfix"></div>
 
-							<article id="project-1">
-								<h2 class="major">Project 1</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
+				<br><br><hr>
 
-							<p>This is one of my various projects that I have created, it is programmed with PHP y MySQL.</p>
+				<H3>Personal Information</H3>    
+		
+				<p> 
+					<div id="list">
+                    <br><b>
+                    <li>I am a hard working person, with positive attitude that does not like to leave work done for another day. I enjoy learning new information technology and I am planning to learn new server side frameworks, Python programming language and artificial intelligence.</li><br>
+
+				    <li>I´ve also worked with JQuery-Interface-UI (Fun Stuff)...
+					Selectors, how to select labels, select classes, practice making events, mouse, hover, click, and move.</li><br>
+
+			        <li>Made requests with AJAX,  AJAX load method, get requests with AJAX in JQuery.</li><br>
+
+			        <li>Used Typescript Tensorflow and practiced with OOP - Object-Oriented Programming.</li><br>
+
 							
-								<img class= "img-offload" src="images/offload.png" alt="offload" /><br><br>
-
-							<p>It is a front / backend project for a small business prototype.</p>
-
-
-								<img class= "img-db" src="images/db.png" alt="db" /><br><br>
-
-							</article>
-
-						<!--Project 2 -->
-
-							<article id="project-2">
-								<h2 class="major">Project 2</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-
-							<p>This other project is a designer store prototype programmed also with PHP- POO and MySQL and it has an e-commerce built in.</p>
-							
-								<img class= "img-offload" src="images/store.png" alt="store" /><br><br>
-
-							<p>Database that connects to the store.</p>
-
-
-								<img class= "img-db" src="images/db-store.png" alt="db-store" /><br><br>
-							</article>
-
-								<!--Project 3 -->
-
-								<article id="project-3">
-								<h2 class="major">Project 3</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-
-							<p>This was a university project of a prototype for a real estate company ad for facebook and YouTube</p>
+                    <li>I like to use Symfony 3 to upload and publish web projects using hostinger and filezilla. Built Web responsive Websites and Blogs and connected them to MySQL database.</a></li><br>  
+                    </b>
+				</p>
+				<hr>
 							<br>
-							<video width="600" height="400" controls>
-							  <source src="images/Briva.mp4" type="video/mp4">
-							Your browser does not support the video tag.
-							</video>
-							<br>
-							</article>
+                
+               <h3>Certificates</h3>			
+			
+				<p> 
 
-							<!--Project 4 -->
+					
+					<br>
+					<br>
+					<b>
+                    <li>I have several certificates</li> 
+                	<li>Web Application Developer</li>
+                	<li>Master in Javascript, Jquery, JqueryUI, Angular, Node.JS</li> 
+                	<li>University certificate in Creation And Development Of Companies.</li>
+                	<li>Another in Advanced English.</li><br><br>
+                	</b>
+				</p>
+					<hr>
+						<br>
+				<h3>Working Experience / Other</h3>
+			<div> 
+				
+				<p>
 
-								<article id="project-4">
-								<h2 class="major">Project 4</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
+					<div id="list">
 
-							<p>This was another university project of a prototype transportation company ad for Facebook and YouTube in English</p>
-							<br>
-							<video width="600" height="400" controls>
-							  <source src="images/English.mp4" type="video/mp4">
-							Your browser does not support the video tag.
-							</video>
-							<br><br>
-							<p>Same project in Spanish Version</p>
-							<br>
-							<video width="600" height="400" controls>
-							  <source src="images/Spanish.mp4" type="video/mp4">
-							Your browser does not support the video tag.
-							</video>
-							</article>
+					<H4>Hotel Victoria Inn</H4><br>
+					<h5>Operations Manager</h5><br>
+					<b>
+                    <li>Developing a family project hotel business under managing and supervising labors.</li><br>
 
-					</div>
+                    <li>Administration: Organizing inventories, exceptional time management, self-motivated, supervision of all the hotel repairs as well as customer service.</li><br><br>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<p class="copyright">&copy; Software Designer | Thomas Hoffmann 2020.</p>
-					</footer>
+                    <li>Handled database and Web site programming tasks (Primarily using JavaScript, HTML 5, Node.JS and Angular 9), Implemented UI design using HTML and CSS working an average of 15 hours per week.</li><br> 
+               		</b>
+
+                    <H4>MANAGER OF FAMILY PROJECT</H4><br>
+
+                    <h5>5 years managing a family business renting houses and apartments, supervising material handling costs and property repairs. From January 2013- August 2018.</h5><br>
+
+                    <b>
+                    <li>Administration: Computer system, webpage, blog and social media management.</li><br>
+
+                    <li>Supervision of web site and mailbox of complaints.</li><br>
+
+					<li>Review of Investment Analysis.</li><br>
+
+					<li>Financial Accounting Input and Output.</li><br>
+					</b>
+					<hr>
+                    <br>
+				</p>
+
+				</article>
 
 			</div>
 
-		<!-- BG -->
-			<div id="bg"></div>
+					<article class="post">
+					
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
 
+			<h3>Programming Languages | Libraries</h3><br>
+						<span class=""><h4><b>Skills | Expertise :</b></h4></span>
+						<!--Info Paragraph.-->
+					<p>
+							<div id="list">
+
+				<ul>
+				<li span style= "color:#99ccff"><a "#tabs-1"><b>OOP | Object Oriented Programming</b></a></li>	
+				<li span style= "color:#0080ff"><a "#tabs-2"><b>JavaScript | Created various personal web sites including a Doctor’s web site</b></a></li>
+				<li span style= "color:#99ccff"><a "#tabs-3"><b>Microsoft Office | Excel | Word | Power Point</b></a></li>
+				<li span style= "color:#0080ff"><a "#tabs-4"><b>PHP | Created a personal transportation company blog with MySQL Database</b></a></li>	
+				<li span style= "color:#99ccff"><a "#tabs-5"><b>JavaScript combined with HTML5 | Created a tetris and space invaders game</b></a></li>
+				<li span style= "color:#0080ff"><a "#tabs-6"><b>Angular 9 | Created a transportation web app and connected it to Mongo | Robo 3T Database</b></a></li>
+				<li span style= "color:#99ccff"><a "#tabs-7"><b>HTML 5 | Designed various websites and styled them with CSS</b></a></li>
+				<li span style= "color:#0080ff"><a "#tabs-8"><b>Google Sheets | Docs</b></a></li>
+				<li span style= "color:#99ccff"><a "#tabs-9"><b>Google Developer Console | Double Account for storing Android Apps</b></a></li>
+				<li span style= "color:#0080ff"><a "#tabs-10"><b>OBS | Live Streaming Studio | Aired a couple of music live shows on YouTube</b></a></li>
+				<li span style= "color:#99ccff"><a "#tabs-11"><b>Wordpress | Created blogs and a telephone company website</b></a></li>
+				<li span style= "color:#0080ff"><a "#tabs-12"><b>Android Programming | Android Apps Development</b></a></li>
+				</ul>		
+			<div>
+					</p><br>
+						<a href="https://www.linkedin.com/in/thomas-hoffmann-v-a6809b148/" class="button-more"><b>More Info</b></a><hr>			
+					</article>
+				</div>
+
+						
+		<br>
+		<img src="img/tom.jpg" class="responsive">
+
+					<article class="post">
+				<aside id="sidebar">
+				
+
+						<p>
+						
+						<h4><span>Most Recent Picture</span></h4>
+						<b>I am a software engineer specialized in information technology and I love doing research with a passion for
+						developing and designing web sites, android apps, blogs and web apps. I have also managed to understand in depth the identification of business opportunities based on creative and profitable technologies, both in traditional companies and in online companies or electronic consortia.
+						Being able to analyze, document and communicate successfully the organizational, economic and technical aspects of the identified opportunities, serving as an agent of change for organizations. Developing a project for the integration of knowledge and responsibilities required to develop an electronic business strategy in an organization.</b>
+						</p>
+						<br><br>
+
+					</div>
+	</div>
+              <br><br>
+					</div>
+				</aside>
+					<br><br>
+					
+
+				<div class="clearfix"></div>
+			</section>
+
+		</section>
+
+			<style>
+
+@media screen and (max-width: 1200px) {
+
+	body{
+		width: 1200px;
+		
+	}
+
+    #global{
+	    width: 85%;
+		margin: 0px auto;
+		margin-left: 200px;
+		margin-top: 30px;
+		padding: 40px;
+		background: white;
+		box-shadow: 0px 0px 5px gray;
+    }
+
+    #logo{
+    	margin-top: 20px;
+    }
+
+
+	#logo h1{
+		margin-top: 70px;
+
+	}
+
+	#login{
+		font-size: 17px;
+	}
+
+
+	#login h1{
+		margin-left: -30px;
+	}
+
+	#menu a{
+		font-size: 23px;
+	}
+
+	b{
+		font-size: 30px;
+	}
+
+	.button-more{
+		width: 150px;
+		height: 50px;
+		font-size: 25px;
+	}
+
+    body p{
+    	font-size: 18px;
+
+    }
+
+     body span{
+    	font-size: 28px;
+
+    }
+
+    form{
+    	float:none;
+    	display: block;
+    	width: 90%;
+    	margin-left: 10px;
+    }
+
+   	article.post{
+	   	width: 100%;
+	   	display: center;
+	   	font-size: 25px;
+   }
+
+   	h1{
+   		font-size: 20px;
+   		margin-left: 50px;
+
+   	}
+
+   	h2{
+   		font-size: 28px;
+   		margin-left: 50px;
+
+   	}
+
+   	h3{
+   		font-size: 20px;
+   		width: 150%;
+   }
+
+   span{
+   		font-size: 20px;
+   		width:100%;
+   }
+
+   #posts{
+  width: 100%;
+  float: left;
+  font-size: 25px;
+  font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+}
+   
+
+    .responsive{
+      width: 60%;
+      height: auto;
+      margin-left: 185px;
+      float: center;
+    }
+
+    #logo h1{
+		margin-top: -20px;
+
+	}
+
+    .button-more{
+      margin-left: 355px;
+    }
+
+
+    .input-submit{
+    	margin-left: 200px;
+    	display: center;
+    }
+
+    h3{
+    	margin-left: 225px;
+    	font-size: 28px;
+    }
+
+ 	h4{
+    	
+    	font-size: 28px;
+    }
+
+
+    .slider{
+      width: 100%;
+      height: 130%;
+    }
+
+    #article .post{
+      display: center;
+    }
+
+    footer{
+	  text-align: center;
+	  width: 100%;
+	  margin-left: 125px;
+	  font-size: 27px;
+}
+	
+	.subir{
+		margin-left: 100px;
+		font-size: 32px;
+	}
+
+
+
+	#sidebar{
+		font-family: Helvetica, Arial;
+		font-size: 25px;
+	    width: 33%;
+		margin-left: 0px;
+				}
+	form{
+		display: block;
+		float:auto;				
+			}
+	
+
+	.clearfix{
+		clear:both;
+		float:none;
+	}
+}
+
+}
+</style>
+
+	
+
+		<footer>
+			Designed & Built By Thomas Hoffmann V. &copy 2020
+
+			<a href="#" class="subir">Go Up</a>
+		</footer>
 	</body>
+
 </html>
