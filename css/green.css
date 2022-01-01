@@ -1,0 +1,27 @@
+body{
+	background: url("../img/spade.svg");
+	background-size: 50%
+	
+}
+
+#logo{
+	background: #404040;
+	
+}
+
+#menu ul li:hover{
+	background: gray;
+}
+
+.button-more{
+	background: gray;
+}
+
+.button-more:hover{
+	background: white;
+}
+
+#sidebar h4{
+	background: url("../img/ok.jpg");
+	background-color: #404040;
+}
